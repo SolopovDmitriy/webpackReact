@@ -1,0 +1,21 @@
+@import "~bootstrap";
+
+$bgColor: #4a8761;
+$textColor: #eb8900;
+
+
+@mixin stickyPanel() {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: $textColor;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+header {
+  @include stickyPanel();
+}
